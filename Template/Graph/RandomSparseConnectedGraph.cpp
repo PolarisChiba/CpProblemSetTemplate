@@ -5,7 +5,7 @@ vector<pair<int, int>> RandomSparseConnectedGraph(int n, int m) {
     // n - 1 <= m
 
     auto v = RandomTree(n);
-    unordered_set<pair<int, int>> s;
+    set<pair<int, int>> s;
     for (auto i : v) s.insert(i);
 
     while ((int)v.size() < m) {
